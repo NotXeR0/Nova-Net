@@ -2,15 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>NovaNet | Internet rápido</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>NovaNet</title>
+
+  <!-- IMPORTANTE -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <div class="logo-container">
-    <img src="logo.png" alt="NovaNet">
+    <img src="logo.png">
     <span>NovaNet</span>
   </div>
 
@@ -24,7 +27,7 @@
 <section class="hero">
   <h1>Internet sin límites</h1>
   <p>Velocidad real para streaming, gaming y trabajo</p>
-  <button class="cta" onclick="go()">Ver cobertura</button>
+  <button onclick="go()">Ver cobertura</button>
 </section>
 
 <section class="plans">
@@ -52,30 +55,22 @@
 
 </section>
 
-<footer>
-  © 2026 NovaNet
-</footer>
-
 <script>
 function go() {
   document.body.innerHTML = `
-    <video id="video" autoplay muted playsinline>
+    <video autoplay muted playsinline>
       <source src="ejemplo.mp4" type="video/mp4">
     </video>
   `;
 
-  const video = document.getElementById("video");
+  const video = document.querySelector("video");
 
-  // estilos fullscreen
   video.style.position = "fixed";
   video.style.top = "0";
   video.style.left = "0";
   video.style.width = "100vw";
   video.style.height = "100vh";
   video.style.objectFit = "cover";
-
-  // intentar fullscreen real
-  video.requestFullscreen().catch(() => {});
 }
 </script>
 
