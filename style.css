@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+}
+
+/* aviso */
+.notice {
+  background: #ffeaa7;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0a1f44;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 35px;
+}
+
+nav button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  background: #00a8ff;
+  color: white;
+  transition: 0.2s;
+}
+
+nav button:hover {
+  background: #0097e6;
+}
+
+/* hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #00a8ff, #273c75);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+}
+
+.cta {
+  padding: 12px 20px;
+  border: none;
+  background: #fbc531;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* planes */
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin: 10px 0;
+  color: #273c75;
+}
+
+.card button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #00a8ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
